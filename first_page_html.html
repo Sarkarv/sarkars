@@ -1,0 +1,67 @@
+<html>
+<tittle><body style = "color : white; background : black"> <pre style = "color: white ; front-size :150 px" ><h1><h2 style="border:green; border-width:8px; border-style:dashed"> How to make a calculutor by using python language.... </h2>. </h1></pre>
+ <img src="kawser.jpg" alt="Flowers" style="width:auto;">
+ <pre style = "color: skyblue"> <u><h1>About Python:</h1></u> </pre>
+ <pre>Python is a high-level, general-purpose programming language.</pre> <pre>Its design philosophy emphasizes code readability with the use of significant indentation.</pre><pre> Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small- and large-scale projects.</pre>
+  <pre style = "color: violet;"><head> <h2>The code is given here</h2></head># Program make a simple calculator
+
+def add(x, y):
+    return x + y
+
+
+def subtract(x, y):
+    return x - y
+
+
+def multiply(x, y):
+    return x * y
+
+
+def divide(x, y):
+    return x / y
+
+
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+while True:
+  
+    choice = input("Enter choice kawser(1/2/3/4): ")
+
+
+    if choice in ('1', '2', '3', '4'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+
+        elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+        
+        # check if user wants another calculation
+        # break the while loop if answer is no
+        next_calculation = input("Let's do next calculation.Ok? (yes/no): ")
+        if next_calculation == "no":
+          break
+    
+    else:
+        print("Invalid Input.")</pre>
+        <pre>Thanks for visiting this web site.<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+      </pre>
+</body>
+</html> 
